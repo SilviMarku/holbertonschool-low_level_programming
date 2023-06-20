@@ -13,9 +13,9 @@ int main(void)
 		putchar(n);
 		n++;
 	}
+	n = 97;
 	while (n < 103)
 	{
-		n = 97;
 		putchar(n);
 		n++;
 	}
