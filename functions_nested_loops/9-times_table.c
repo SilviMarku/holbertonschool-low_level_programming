@@ -1,25 +1,33 @@
 #include "main.h"
 /**
- * print_last_digit - it takes an argument of
- * type int and returns its last digit
- * @n: integer
- * Return: the last digit of the number
+ * times_table - prints the 9 times table, starting with 0
  */
-
-
-int print_last_digit(int n)
+void times_table(void)
 {
-if (n < 0)
+int i, j;
+int sum;
+for (i = 0; i <= 9; i++)
 {
-n = n % 10;
-n = n * -1;
-_putchar('0' + n);
-return (n);
+for (j = 0; j <= 9; j++)
+{
+sum = i * j;
+if (sum >= 10)
+_putchar('0' + sum / 10);
+_putchar('0' + sum % 10);
+if (j < 9)
+{
+_putchar(',');
 }
-else
+if (i * (j + 1) < 10 && j != 9)
 {
-n = n % 10;
-_putchar('0' + n);
-return (n);
+_putchar(' ');
+_putchar(' ');
+}
+else if (j != 9)
+{
+_putchar(' ');
+}
+}
+_putchar('\n');
 }
 }

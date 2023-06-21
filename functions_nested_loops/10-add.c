@@ -1,25 +1,15 @@
 #include "main.h"
 /**
- * print_last_digit - it takes an argument of
- * type int and returns its last digit
- * @n: integer
- * Return: the last digit of the number
+ * add - adds two numbers together
+ * @a: first input
+ * @b: second input
+ * @i: first input
+ * @j: second input
+ * Return: returns the sum of the numbers
  */
-
-
-int print_last_digit(int n)
+int add(int i, int j)
 {
-if (n < 0)
-{
-n = n % 10;
-n = n * -1;
-_putchar('0' + n);
-return (n);
-}
-else
-{
-n = n % 10;
-_putchar('0' + n);
-return (n);
-}
+	int s;
+	s = i + j;
+	return (s);
 }
