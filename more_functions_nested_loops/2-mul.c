@@ -5,7 +5,7 @@
  * mul - main function
  * @a: first parameter
  * @b: second parameter
- * Return: 1 if c is a digit and 0 if otherwise
+ * Return: a * b
  */
 
 int mul(int a, int b)
