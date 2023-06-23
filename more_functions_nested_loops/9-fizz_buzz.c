@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * print the number - main function
+ * main - prints the numbers from 1 to 100
  * Return: returns 0 if succesful
  */
 
