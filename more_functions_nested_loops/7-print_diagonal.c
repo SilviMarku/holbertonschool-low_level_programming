@@ -2,29 +2,25 @@
 #include "main.h"
 
 /**
- * print_diagonal - main function
- * @n: is the number of times the character \ should be printed
+ * print_triangle - main function
+ * @size: parameter
+ * Return: 1 if true or 0 if false 
  */
 
-void print_diagonal(int n)
+void print_triangle(int size)
 {
 	int i;
 	int j;
 
-	if (n <= 0)
+	if (size <= 0)
 		_putchar('\n');
 
-	for (i = 0; i < n; i++)
+	for (i = 1; i <= size; i++)
 	{
-		for (j = 0; j <= i; j++)
-		{
-			if (i == j)
-			{
-				_putchar('\\');
-			}
-			else
-				_putchar(' ');
-		}
+		for (j = size - i; j > 0; j--)
+			_putchar(' ');
+		for (j = 0; j < 0; j++)
+			_putchar('#');
 	_putchar('\n');
 	}
 }
