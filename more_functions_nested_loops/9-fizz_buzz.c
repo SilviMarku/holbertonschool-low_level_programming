@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - main function
+ * print the number - main function
  * Return: returns 0 if succesful
  */
+
 int main(void)
 {
 	int i;
