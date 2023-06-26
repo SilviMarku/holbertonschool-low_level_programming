@@ -2,29 +2,29 @@
 #include <string.h>
 
 /**
- * rev_string  - Write a function that reverses a string
- * @s: string
+ * rev_string - Write a function that reverses a string
+ * @s: pointer to character
+ * Return: fgfh
  */
 
 void rev_string(char *s)
 {
-	int tmp,begin, count, end;
+	int tmp, start, len, end;
 
-	count = 0;
+	len = 0;
 
-	while (s [count] != '\0')
+	while (s[len] != '\0')
 		len++;
 
-	begin = 0;
-	end = count - 1;
+	start = 0;
+	end = len - 1;
 
-	while (begin < end)
+	while (start < end)
 	{
-		tmp = s[begin];
-		s[begin] = s[end];
-	       s[end] = tmp
-	 begin++;
-	       end--;       
+		tmp = s[start];
+		s[start] = s[end];
+		s[end] = tmp;
+		start++;
+		end--;
 	}
-	_putchar('\n');
 }
