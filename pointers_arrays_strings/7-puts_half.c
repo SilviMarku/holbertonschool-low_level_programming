@@ -2,19 +2,29 @@
 #include <string.h>
 
 /**
- * _puts  - Write a function that prints a string
- * @str: string
+ * puts_half  - Write a function that prints a string
+ * @str: point to character
  */
 
-void _puts(char *str)
+void puts_half(char *str)
 {
 	int i = 0;
-	int l = (int) strlen(str);
+	int n = (sizeof(str) - 1) / 2;
 
-	while (i < l)
+	if (sizeof(str) % 2 == 1)
 	{
-		_putchar(str[i]);
-		i++;
+		for (i = n; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
+	else
+	{
+		for (i = (sizeof(str) / 2) + 1; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
+	}
+
 	_putchar('\n');
 }
