@@ -1,20 +1,19 @@
 #include "main.h"
 #include <string.h>
-
+#include <stdio.h>
 /**
- * _puts  - Write a function that prints a string
- * @str: string
+ *print_array - function that prints n elements of an array of integers
+ *@a: pointer to the array
+ *@n: the number of elements of the array to be printed
  */
-
-void _puts(char *str)
+void print_array(int *a, int n)
 {
 	int i = 0;
-	int l = (int) strlen(str);
 
-	while (i < l)
-	{
-		_putchar(str[i]);
-		i++;
-	}
-	_putchar('\n');
+	for (i = 0; i < n; i++)
+		if (i == n - 1)
+			printf("%i", *(a + i));
+		else
+			printf("%i, ", *(a + i));
+	printf("\n");
 }
