@@ -2,19 +2,20 @@
 #include <string.h>
 
 /**
- * _puts  - Write a function that prints a string
- * @str: string
+ * *_strcpy - Write a function that copies the string pointed to by src
+ * @a: string
+ * Return ytryu
  */
 
-void _puts(char *str)
-{
-	int i = 0;
-	int l = (int) strlen(str);
 
-	while (i < l)
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		_putchar(str[i]);
-		i++;
+		dest[i] = src[i];
 	}
-	_putchar('\n');
+	dest[i] = '\0';
+	return (dest);
 }
