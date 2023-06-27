@@ -19,4 +19,5 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	return (dest);
+	_putchar ('\0');
 }
