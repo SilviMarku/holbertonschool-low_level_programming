@@ -1,25 +1,20 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * print_rev  - Write a function that prints a string
- * @s: string
+ * print_rev - main function
+ * @s: param
  */
-
 void print_rev(char *s)
 {
-	int i;
-	int l = 0;
+	int i = 0;
+	int j;
 
-	while (s[l] != '\')
-	       l++;
-
-	i = l - 1;
-
-	while (i >= 0)
-		{	
-		_putchar(s[i]);
-		i--;
-		}
+	while (s[i] != '\0')
+	{
+		i++;
+		i = i;
+	}
+	for (j = i - 1; j >= 0; j--)
+		_putchar(s[j]);
 	_putchar('\n');
 }
