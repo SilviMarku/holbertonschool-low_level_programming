@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *_strspn - function that searches a string for any of a set of bytes
+ *_strpbrk - function that searches a string for any of a set of bytes
  *@s: memory area
  *@accept: memory area
  *Return: return 0
