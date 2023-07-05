@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  * @argc: number of argumenst supplied to argv
@@ -7,12 +8,16 @@
  */
 int main(int argc, char *argv[])
 {
-int i = 0;
+	int product;
 
-while (i < argc)
-	{	
-	printf("%s\n", argv[i]);
-	i++;
+	if (argc != 3)
+	{
+	printf("Error\n");
+	return (1);
 	}
+	{
+	product = atoi(argv[1]) * atoi(argv[2]);
+	printf("%d\n", product);
 	return (0);
+	}
 }
