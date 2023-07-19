@@ -1,5 +1,3 @@
-#ifndef CALC_H
-#define CALC_H
 #include <stdio.h>
 /**
  *print_name - prints a name
@@ -13,4 +11,3 @@ void print_name(char *name, void (*f)(char *))
 
 	f(name);
 }
-#endif
