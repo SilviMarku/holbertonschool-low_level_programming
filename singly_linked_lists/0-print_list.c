@@ -5,7 +5,6 @@
 /**
  * print_list - function that prints all the elements
  *@h: header node
- *@n: counter
  *Return: number of nodes
  */
 
