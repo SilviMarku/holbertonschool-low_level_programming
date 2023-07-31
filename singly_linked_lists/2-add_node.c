@@ -4,10 +4,10 @@
 #include <stdio.h>
 
 /**
- * *add_node - function that adds a new node at the beginning 
- *@h:pointer to header node
- *@str: string value to the new node 
- *Return: adress of new node
+ * add_node - function that adds a new node at the beginning
+ *@head: pointer to head node
+ *@str: string value to the new node
+ *Return: the addres of the new elemnt
  */
 
 list_t *add_node(list_t **head, const char *str)
