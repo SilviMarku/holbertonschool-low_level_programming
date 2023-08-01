@@ -7,7 +7,7 @@
  * add_node_end - function that adds a new node at the end
  *@head: pointer to head node
  *@str: string value to the new node
- *Return: the address of the new elemnt
+ *Return: the address of the new element
  */
 
 list_t *add_node_end(list_t **head, const char *str)
