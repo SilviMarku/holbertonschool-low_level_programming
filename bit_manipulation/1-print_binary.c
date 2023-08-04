@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- *print_binary - function that prints  a binary representation of
+ *print_binary - function that print  a binary representation of
  *a decimal number
  *@n: number
  */
