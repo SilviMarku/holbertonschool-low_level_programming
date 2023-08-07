@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcat - main function
- * @dest: param
- * @src: param
+ * _strcat - main function that concatenates two strings
+ * @dest: destination parameter
+ * @src: sorse parammeter
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
@@ -18,6 +18,4 @@ char *_strcat(char *dest, char *src)
 		dest[i + j] = src[j];
 	dest[i + j] = '\0';
 	return (dest);
-
-
 }

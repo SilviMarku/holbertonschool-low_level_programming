@@ -2,7 +2,7 @@
 
 /**
  * print_rev - main function
- * @s: param
+ * @s: parameter
  */
 void print_rev(char *s)
 {
