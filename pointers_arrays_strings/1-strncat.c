@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strncat - main function
- * @dest: param
- * @src: param
+ * _strncat - main function that concatenates two strings
+ * @dest: param destination string
+ * @src: param sorce string
  * @n: param
  * Return: dest
  */
