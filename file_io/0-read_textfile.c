@@ -5,8 +5,8 @@
 /**
  * read_textfile - function that reads a text file and prints it to the POSIX
  * standard output
- * @filename: name of the file
- * @letters: number of letters to copy
+ * @filename: a pointer to a const char, representing the name of the file
+ * @letters: a size_t value representing the number of letters to copy nad print
  * Return: the number of letters it could read and print
  */
 
